@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>광운대학교 종합정보서비스</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+  <!--<link rel="shortcut icon" href="/images/kw_favicon.ico">-->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body background="images/backdround_01.gif" leftmargin="0" topmargin="0">
+
+
+  <form name="form1" method="POST" action="index.jsp" onsubmit="javascript:return check_form();">
+    <input type="hidden" name="login_type" value="2">
+    <input type="hidden" name="check_svc" value="">
+    <input type="hidden" name="redirect_url" value="https://info.kw.ac.kr/">
+    <input type="hidden" name="page_url" value="">
+    <input type="hidden" name="layout_opt" value="">
+
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="5">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle">
+
+
+          <table width="910" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="310" valign="top"><img src="images/image_intra01.gif" width="301" height="521"></td>
+              <td valign="top">
+
+
+                <table width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" background="images/image_intra_box02.gif">
+                      <BR /><BR /><BR /><BR /><BR /><BR /><BR />
+                      <table width="559" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td height="40"><a
+                              href="javascript:void(window.open('./password/modify_password.php?opt=lost','pwd_lost','width=410,height=470,left='+(screen.width-410)/2+',top='+(screen.height-450)/2));"
+                              onfocus="javascript:this.blur();"><img src="images/image_intra_img_01.gif" width="558"
+                                height="28" border="0"></a></td>
+                        </tr>
+                        <tr>
+                          <td height="140">
+                            <table width="559" height="137" border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td background="images/image_intra_img_03.gif">
+                                  <table width="320" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <colgroup>
+                                      <col width="15%">
+                                      <col width="25%">
+                                      <col width="35%">
+                                      <col width="*">
+                                    </colgroup>
+                                    <tr>
+                                      <td height="25"> </td>
+                                      <td colspan="3" align="left">
+                                        <select name="gubun_code" id="gubun_code" tabindex="1" style="width:143px;"
+                                          onchange='javascript:fn_showhide();'>
+                                          <option value="11">학부생</option>
+                                          <option value="21">교수(Professor)</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="25"> </td>
+                                      <!--ID 입력 부분-->
+                                      <td><input name="member_no" type="text" style="width:137px;" tabindex="2"></td>
+
+                                    </tr>
+                                    <tr>
+                                      <td height="25">
+                                        <p></p>
+                                      </td>
+
+                                      <!--비밀번호 입력 부분-->
+                                      <td align="left"><input name="password" type="password" style="width:137px;"
+                                          tabindex="3"></td>
+                                      <!-- 로그인 버튼 -->
+                                      <td> 
+                                      <form action="index.jsp" method="post">
+                                      	<input type="submit" value="로그인">
+                                      </form>
+                                      <!-- <input name="image" type="image" tabindex="4" src="images/intra_login_b.gif"
+                                          width="95" height="19" alt="로그인" >  -->   
+                                          </td>
+
+                                      <td>
+                                        <div id="showhide" name="showhide">
+
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+
+                        <tr>
+                          <td height="28" align="right">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                              <tr>
+                                <td align="left">
+                                  <!--
+                                <a href="javascript:modify_password_with_pki(document.form1.gubun_code.value,document.form1.member_no.value);"><img src="images/intra_pass_sett.gif" alt="비밀번호 초기화" width="95" height="23" border="0"></a>
+								--><br>
+                                </td>
+                                <td align="right">
+
+                                  <!--
+                                <a href="/webnote/email_search/person_search.php" target="_blank"><img src="images/intra_number_b.gif" width="85" height="23" border="0"></a>
+								-->
+                                  <!--
+                                <a href="http://www.kw.ac.kr/sub/web/webservice1_8NP.do" target="_blank"><img src="images/intra_number_b.gif" width="85" height="23" border="0"></a>
+                                -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left"><br>
+                                </td>
+                                <td align="left">
+
+                                  <BR /><BR /><BR /><BR />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="17" align="center">&nbsp;</td>
+                        </tr>
+                        <!--
+                      <tr>
+                        <td height="40" align="center"><img src="images/image_intra_img_02.gif" width="558" height="28"></td>
+                      </tr>
+                      <tr>
+                        <td height="60" align="center"><img src="images/image_intra_img_04.gif" width="559" height="163" border="0" usemap="#pki_map"></td>
+                      </tr>
+                      <tr>
+                        <td height="33" align="right">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                            <tr>
+                              <td align="right"><a href="javascript:open_pki_login('https%3A%2F%2Finfo.kw.ac.kr%2F',document.form1.gubun_code.value,document.form1.member_no.value);"><img src="images/intra_in_login_b.gif" width="105" height="23" border="0" alt="공인인증서로그인"></a></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+-->
+
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" background="images/image_intra_box02.jpg"><img
+                        src="images/image_intra_img_05.gif" width="601" height="23"></td>
+                  </tr>
+                </table>
+
+
+
+              </td>
+            </tr>
+          </table>
+
+
+
+        </td>
+      </tr>
+    </table>
+
+  </form>
+
+
+
+
+</body>
+
+</html>
